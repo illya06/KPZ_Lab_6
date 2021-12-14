@@ -1,0 +1,27 @@
+﻿<Window x:Class="KPZ_Lab_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KPZ_Lab_6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400
+        " Width="800">
+    <Grid>
+        <Canvas>
+            <DataGrid AutoGenerateColumns="True" Height="250" Width="400" Name="table" SelectionChanged="table_SelectionChanged" RowEditEnding="table_RowEditEnding" Margin="25,57,439,77"/>
+            <Button Width="50" Content="Load" Name="LoadTable" Click="LoadTable_Click" Margin="375,57,375,77" Canvas.Left="64" Canvas.Top="49" Height="154"/>
+            <TextBox Name="fn" Width="100" Height="25" Margin="618,76,82,283"></TextBox>
+            <Label Content="Name" Width="50" Height="25" Margin="496,76,204,283" Canvas.Left="25" />
+            <TextBox Name="ln" Width="100" Height="25" Margin="618,106,82,253"></TextBox>
+            <Label Content="Last Name" Height="25" Margin="521,106,213,253" Canvas.Left="0" />
+            <TextBox Name="numb" Width="100" Height="25" Canvas.Left="618" Canvas.Top="136"/>
+            <Label Content="Empl #" Height="25" Canvas.Left="521" Canvas.Top="136" />
+            <TextBox Name="dept" Width="100" Height="25" Canvas.Left="618" Canvas.Top="167"/>
+            <Label Content="Dept" Height="25" Canvas.Left="521" Canvas.Top="167" />
+            <Button Width="50" Content="Create" Name="Create" Click="Create_Click" Canvas.Left="529" Canvas.Top="216" Height="56"/>
+            <Button Width="50" Content="Update" Name="Update" Click="Update_Click" Canvas.Left="604" Canvas.Top="216" Height="56"/>
+            <Button Width="50" Content="Delete" Name="Delete" Click="Delete_Click" Canvas.Left="680" Canvas.Top="216" Height="56"/>
+        </Canvas>
+    </Grid>
+</Window>
